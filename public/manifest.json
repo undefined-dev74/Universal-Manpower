@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Universal Manpower Online",
+  "name": "Recruitement project based on React",
   "icons": [
     {
       "src": "favicon.ico",
