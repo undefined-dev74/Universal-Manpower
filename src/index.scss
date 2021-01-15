@@ -1,0 +1,11 @@
+//------------App------------------------
+@import './containers/App.scss';
+
+// ----------- Abstracts Section ------------
+@import './scss/abstracts/mixins';
+@import './scss/abstracts/variables';
+
+// ----------- Base Section      -------------
+@import './scss/base/animation';
+@import './scss/base/base';
+@import './scss/base/typography';
