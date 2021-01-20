@@ -1,57 +1,50 @@
 import React from 'react';
+import { Row, Col } from 'antd';
+
 const Header = () => {
   return (
     <div className="header">
-      <div className="main-hader">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container">
-            <a class="navbar-brand" href="./">
-              Universal Manpower Online
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item d-flex ">
-                  <a class="nav-link active" aria-current="page" href="./">
-                    Home
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./">
-                    Link
-                  </a>
-                </li>
-
-                <li class="nav-item">
-                  <a
-                    class="nav-link disabled"
-                    href="./"
-                    tabindex="-1"
-                    aria-disabled="true"
-                  >
-                    Disabled
-                  </a>
-                </li>
-              </ul>
-              <form class="d-flex">
-                <button class="btn btn-success" type="submit">
-                  Post A Job
-                </button>
-              </form>
+      <Row>
+        <Col span={24}>
+          {/* <!-- Image and text --> */}
+          <div className="container">
+            <div className="header__wrap">
+              <a className="header__branding" href="./" rel="home">
+                <h1 className="header__title">
+                  <img
+                    src="https://jobify-demos.astoundify.com/classic/wp-content/uploads/sites/2/2016/04/classic-logo-new.svg"
+                    alt=""
+                  />
+                </h1>
+                <h2 className="header__site-description">
+                  Everything you need to get a job
+                </h2>
+              </a>
+              <nav className="header__primary">
+                <div className="header__menu header__menu--primary">
+                  <ul className="header__menu header__menu--primary">
+                    <li className="header__menu-item">
+                      <a href="">Home</a>
+                    </li>
+                    <li className="header__menu-item">
+                      <a href="">Find a Job</a>
+                    </li>
+                    <li className="header__menu-item">
+                      <a href="">Upload CV</a>
+                    </li>
+                    <li className="header__menu-item">
+                      <a href="">About Us</a>
+                    </li>
+                    <li className="header__menu-item">
+                      <a href="">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
             </div>
           </div>
-        </nav>
-      </div>
+        </Col>
+      </Row>
     </div>
   );
 };
