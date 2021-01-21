@@ -9,25 +9,27 @@ const Header = () => {
           {/* <!-- Image and text --> */}
           <div className="container">
             <div className="header__wrap">
-              <a className="header__branding" href="./" rel="home">
-                <h1 className="header__title">
-                  <img
-                    src="https://jobify-demos.astoundify.com/classic/wp-content/uploads/sites/2/2016/04/classic-logo-new.svg"
-                    alt=""
-                  />
-                </h1>
-                <h2 className="header__site-description">
-                  Everything you need to get a job
-                </h2>
-              </a>
+              <div className="header__brand">
+                <a className="header__branding" href="./" rel="home">
+                  <h1 className="header__title">
+                    <img
+                      src="https://jobify-demos.astoundify.com/classic/wp-content/uploads/sites/2/2016/04/classic-logo-new.svg"
+                      alt=""
+                    />
+                  </h1>
+                  <h2 className="header__site-description">
+                    Everything you need to get a job
+                  </h2>
+                </a>
+              </div>
               <nav className="header__primary">
-                <div className="header__menu header__menu--primary">
+                <div className="header__menu ">
                   <ul className="header__menu header__menu--primary">
                     <li className="header__menu-item">
                       <a href="">Home</a>
                     </li>
                     <li className="header__menu-item">
-                      <a href="">Find a Job</a>
+                      <a href="">Find A Job</a>
                     </li>
                     <li className="header__menu-item">
                       <a href="">Upload CV</a>
